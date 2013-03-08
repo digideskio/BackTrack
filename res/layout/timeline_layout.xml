@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="left"
+    android:orientation="horizontal" 
+    android:paddingTop="5dp">
+    
+    <Button
+        android:id="@+id/start"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+ 		android:text="START" 
+ 		android:layout_alignParentLeft="true"/>
+    
+     <TextView
+         android:id="@+id/track_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/end"
+         android:layout_alignBottom="@+id/end"
+         android:layout_centerHorizontal="true"
+         android:layout_toLeftOf="@+id/end"
+         android:layout_toRightOf="@+id/start"
+         android:gravity="center_vertical|center_horizontal"
+         android:text="--:--" 
+         android:textSize="12pt"/>
+    
+    <Button
+        android:id="@+id/end"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="END" 
+        android:layout_alignParentRight="true"/>
+
+   
+
+</RelativeLayout>
